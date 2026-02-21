@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Vendors",
+    "recordCount": 100,
+    "isDependent": false,
+    "fields": []
+  },
+  {
+    "name": "Line Items",
+    "recordCount": 100,
+    "isDependent": false,
+    "fields": []
+  },
+  {
+    "name": "POs",
+    "recordCount": 100,
+    "isDependent": true,
+    "fields": []
+  },
+  {
+    "name": "Invoices",
+    "recordCount": 100,
+    "isDependent": true,
+    "fields": [
+      {
+        "name": "PO_MATCHED",
+        "type": "enum",
+        "distribution": [
+          {
+            "label": "PO_MATCHED",
+            "percentage": 100
+          }
+        ]
+      },
+      {
+        "name": "PRICE_VARIENCE",
+        "type": "enum",
+        "distribution": [
+          {
+            "label": "PRICE_VARIENCE",
+            "percentage": 25
+          },
+          {
+            "label": "NONE",
+            "percentage": 75
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Contracts",
+    "recordCount": 10,
+    "isDependent": true,
+    "fields": []
+  }
+]
